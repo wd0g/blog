@@ -1,0 +1,116 @@
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- ZUI 标准版压缩后的 CSS 文件 -->
+    <link rel="stylesheet" href="http://cdn.bootcss.com/zui/1.5.0/css/zui.min.css">
+    <!-- ZUI Javascript 依赖 jQuery -->
+    <script src="http://cdn.bootcss.com/zui/1.5.0/lib/jquery/jquery.js"></script>
+    <!-- ZUI 标准版压缩后的 JavaScript 文件 -->
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/zui/1.5.0/js/zui.min.js"></script>
+    <style>
+        #head {
+            height: 50px;
+        }
+        
+        #body {
+            height: 800px;
+        }
+        
+        #footer {
+            height: 110px;
+        }
+        
+        #menu {
+            width: 18%;
+            height: 100%;
+        }
+        
+        #content {
+            width: 82%;
+            overflow: hidden;
+            height: 100%;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container-fixed">
+        <div id="head" class="container-fluid">
+            <nav class="navbar navbar-default" role="navigation">
+                <div class="container-fluid">
+                    <!-- 导航头部 -->
+                    <div class="navbar-header">
+                        <h4>Wd0g's Blog</h4></div>
+                    <!-- 导航项目 -->
+                    <div class="collapse navbar-collapse navbar-collapse-example">
+                        <!-- 右侧的导航项目 -->
+                        <ul class="nav navbar-nav navbar-right">
+                            <li class="dropdown">
+                                <a href="your/nice/url" class="dropdown-toggle" data-toggle="dropdown"> <i class="icon-user"></i> Wd0g <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    <li>
+                                        <a href="your/nice/url"> <i class="icon-off"></i>退出</a>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- END .navbar-collapse -->
+                </div>
+            </nav>
+        </div>
+        <div id="body" class="container-fluid">
+            <div id="menu" class="pull-left">
+                <nav class="menu" data-toggle="menu" style="width: 200px">
+                    <ul class="nav nav-primary">
+                        <li class="active"><a href="index.html"><i class="icon-home"></i> 总览</a></li>
+                        <li class="nav-parent"><a href="javascript:;"><i class="icon-th"></i> 个人中心</a>
+                            <ul class="nav">
+                                <li><a href="user.html"><i class="icon-user"></i> 我的信息</a></li>
+                                <li><a href="javascript:;"><i class="icon-desktop"></i> 博客设置</a></li>
+                                <li><a href="javascript:;"><i class="icon-eye-open"></i> 安全设置</a></li>
+                                <li><a href="javascript:;"><i class="icon-zoom-in"></i> 登录记录</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-parent"> <a href="javascript:;"><i class="icon-list-alt"></i> 我的文章</a>
+                            <ul class="nav">
+                                <li><a href="javascript:;"><i class="icon-file-text"></i> 正常文章</a></li>
+                                <li><a href="javascript:;"><i class="icon-pencil"></i> 草稿箱</a></li>
+                                <li><a href="javascript:;"><i class="icon-trash"></i> 回收站</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-parent"> <a href="javascript:;"><i class="icon-comments"></i> 我的评论</a>
+                            <ul class="nav">
+                                <li><a href="javascript:;"><i class="icon-comment"></i> 正常评论</a></li>
+                                <li><a href="javascript:;"><i class="icon-chat"></i> 垃圾评论</a></li>
+                                <li><a href="javascript:;"><i class="icon-trash"></i> 回收站</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-parent"> <a href="javascript:;"><i class="icon-tasks"></i> 博客状态</a>
+                            <ul class="nav">
+                                <li><a href="javascript:;"><i class="icon-group"></i> 访问</a></li>
+                                <li><a href="javascript:;"><i class="icon-bug"></i> 安全</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+            <div id="content">
+                <div class="panel">
+                    <div class="panel-heading"> 访问情况 </div>
+                    <div class="panel-body">
+                        <canvas id="myChart" width="882.75" height="300"></canvas>
+                    </div>
+                </div>
+                <div class="panel">
+                    <div class="panel-heading"> 热门页面 </div>
+                    <div class="panel-body"> 这里会是列表 </div>
+                </div>
+            </div>
+        </div>
+        <div id="footer" class="container-fluid"></div>
+    </div>
+</body>
+
+</html>
